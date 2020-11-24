@@ -4,8 +4,7 @@
 
 # WikiCraft README :
 
-## Welcome to this beautiful WebSite
-### Here you can find informations about :
+### Welcome to this beautiful WebSite, here you can find informations about :
 - [ ] How to install Minecraft
   - [ ] legaly with the official launcher
   - [ ] legaly with MultiMC
