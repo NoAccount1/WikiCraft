@@ -15,10 +15,14 @@
 <body>
     <nav class="nav" style="background-color: #0C301E;">
         <div class="nav-left">
-            <a onclick="toggleTabsLeft()" tabindex="0" id="toggleTab" class="nav-icon hide-small-desktop-up"><i class="d-icon d-menu-hamburger"></i></a>
+            <a onclick="toggleTabsLeft()" tabindex="0" id="toggleTab" class="nav-icon hide-small-desktop-up">
+                <i class="d-icon d-menu-hamburger"></i>
+            </a>
             <a href="/WikiCraft/index.html"><img class="nav-brand" src="/WikiCraft/images/favicon/ServerLogo.png" alt="Server Logo"></a>
             <div class="float-right hide-small-desktop-up">
-                <a class="nav-icon" id="navToggle"><i class="d-icon d-more-vertical"></i></a>
+                <a class="nav-icon" id="navToggle">
+                    <i class="d-icon d-more-vertical"></i>
+                </a>
             </div>
         </div>
         <div id="navMenuContent" class="nav-responsive">
@@ -43,5 +47,10 @@
         function toggleMenu() {
           document.getElementById('navMenuContent').classList.toggle("is-active");
         }
+
+        function toggleTabsLeft() {
+            var toggleTabsLeft = document.getElementById("toggleTabsLeft");
+            toggleTabsLeft.classList.toggle('tablet-down-toggle-tabs-left');
+        };
     </script>
 </body>
