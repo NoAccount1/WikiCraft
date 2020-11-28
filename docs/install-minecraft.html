@@ -11,6 +11,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/denali-icon-font/dist/denali-icon-font.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/denali-css/css/denali.css">
     <link href="/WikiCraft/images/favicon/ServerIconNoBGSmall.png" rel="icon">
+    <style>
+        hr {
+            margin: 70px 0px;
+        }
+        h2 {
+            margin: 0px 0px 10px;
+        }
+        p {
+            margin: 0px 0px 30px;
+        }
+        p.no-margin {
+            margin: 0px;
+        }
+        .margin-0-0-30 {
+            margin: 0px 0px 30px;
+        }
+        .margin-0-0-10 {
+            margin: 0px 0px 10px;
+        }
+        .margin-70-0 {
+            margin: 70px 0px;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav" style="background-color: #0C301E;">
@@ -31,7 +54,6 @@
                     <div class="menu-content">
                         <a href="/WikiCraft/docs/install-minecraft.html">Install Minecraft</a>
                         <a href="/WikiCraft/docs/install-modpack.html">Install a Modpack</a>
-                        <!-- <a href="./docs/launchers/official.html">Install </a> -->
                     </div>
                 </div>
             </div>
@@ -53,31 +75,55 @@
 
         <div id="toggleTabsLeft" class="tabs is-primary is-vertical tablet-down-hide-left">
             <ul>
-                <li class="tabs__section-header">Launchers payants</li>
+                <li class="tabs__section-header"><a href="#payant">Launchers payants</a></li>
 
-                    <li class=""><a href="">Launcher Officiel</a></li>
-                    <li class=""><a href="">MultiMC</a></li>
-                    <li class=""><a href="">FR-Minecraft</a></li>
+                    <li class=""><a href="#officiel">Launcher Officiel</a></li>
+                    <li class=""><a href="#multimc">MultiMC</a></li>
+                    <li class=""><a href="#fr-minecraft">FR-Minecraft</a></li>
 
-                <li class="tabs__section-header">Launchers Gratuits</li>
+                <li class="tabs__section-header"><a href="#gratuits">Launchers gratuits</a></li>
 
-                    <li class=""><a href="">TLauncher</a></li>
-                    <li class=""><a href="">Shiginima Launcher</a></li>
-                    <li class=""><a href="">BS Launcher</a></li>
+                    <li class=""><a href="#tlauncher">TLauncher</a></li>
+                    <li class=""><a href="#shiginima">Shiginima Launcher</a></li>
+                    <li class=""><a href="#bloodsymphony">BS Launcher</a></li>
             </ul>
         </div>
 
         <div id="container" style="overflow-x:hidden; -webkit-overflow-scrolling: touch;" class="overflow-y-auto flex-auto">
             <div style="max-width: 1140px;">
                 <div class="markdown-docs container-full p-t-30" style="max-width: 860px; margin: 0px auto 400px auto;">
-                    <h1 id="menu">Launchers Minecraft</h1>
+                    <h1 id="top">Launchers Minecraft</h1>
+                    <p>Minecraft est un jeu extrèmement populaire et qui peut être lancé via un grand nombre de launchers. La plupart de ces launchers sont payants</p>
                     
-                    <p>
-                        Il existe un certain nombre de launchers minecraft.
-                        Certains sont payants et d'autre gratuit dits "cracks"
-                    </p>
+                    <hr>
+
+                    <h2 id="payant">Launchers premium</h2>
+                    <p>Les launchers dits "payants" sont les launchers qui utilisent le système de connection de Mojang et qui requièrent donc un compte Minecraft premium</p>
+
+                        <h3 id="officiel" style="text-align: center;">Launcher officiel</h3>
+                        <p style="margin: 0px;">Le Launcher officiel</p>
+                        <button class="button is-full" style="margin: 30px 0px 30px;">Téléchargement</button>
+                        
+                        <h3 id="multimc">MultiMC</h3>
+                        <p>Launcher multi-instance</p>
+
+                        <h3 id="fr-minecraft">Fr-Minecraft</h3>
+                        <p class="no-margin">Launcher du site FR-Minecraft</p>
+                        <img src="WikiCraft/images/asset/fr-minecraft/main-menu.png"
 
                     <hr>
+                    
+                    <h2 id="gratuits">Launchers gratuits</h2>
+
+                        <h3 id="tlauncher">TLauncher</h3>
+                        <p>Le Launcher officiel</p>
+
+                        <h3 id="shiginima">Shiginima Launcher</h3>
+                        <p>Le Launcher officiel</p>
+
+                        <h3 id="bloodsymphony">BS Launcher</h3>
+                        <p>Le Launcher officiel</p>
+                    
                 </div>
             </div>
         </div>
