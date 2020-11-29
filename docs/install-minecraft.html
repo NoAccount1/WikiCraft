@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/denali-css/css/denali.css">
     <link rel="stylesheet" href="/WikiCraft/assets/css/overrides.css">
     <link rel="icon" href="/WikiCraft/assets/images/icons/ServerIconNoBGSmall.png">
+    <link rel="stylesheet" href="../assets/css/overrides.css">
 </head>
-<body>
+<body id="body" class="">
     <nav class="nav" style="background-color: #0C301E;">
         <div class="nav-left">
             <a onclick="toggleTabsLeft()" tabindex="0" id="toggleTab" class="nav-icon hide-small-desktop-up">
@@ -25,7 +26,7 @@
             </div>
         </div>
         <div id="navMenuContent" class="nav-responsive">
-            <div class="nav-right">
+            <div class="nav-center">
                 <a href="/WikiCraft/" class="nav-item">Home</a>
                 <a href="/WikiCraft/docs/servers" class="nav-item">Servers</a>
                 <a href="/WikiCraft/docs/launchers" class="nav-item">Launchers</a>
@@ -37,13 +38,37 @@
                     </div>
                 </div>
             </div>
+            <div class="nav-right">
+                <a class="nav-icon">
+                    <i class="d-icon d-search"></i>                    
+                    <span class="icon-name">Search</span>
+                </a>
+                <a href="https://github.com/noaccount1/WikiCraft" class="nav-icon">
+                    <i class="d-icon d-github"></i>
+                    <span class="icon-name">GitHub</span>
+                </a>
+                <div class="menu menu--nav is-right">
+                    <div class="nav-icon menu-trigger">
+                        <i class="d-icon d-more-horizontal-circle"></i>
+                        <span class="icon-name">More</span>
+                    </div>
+                    <div class="menu-content">
+                        <a onclick="toggleTheme()" ><i class="d-icon d-dark-mode"></i> Dark Theme</a>
+                        <a ><i class="d-icon d-bug"></i> Report a bugs</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <script>
-        document.getElementById('navToggle').addEventListener("click", toggleMenu);
-      
+        document.getElementById('navToggle').addEventListener('click', toggleMenu);
         function toggleMenu() {
-          document.getElementById('navMenuContent').classList.toggle("is-active");
+          document.getElementById('navMenuContent').classList.toggle('is-active');
+        }
+
+        document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+        function toggleTheme() {
+            document.getElementById('body').classList.toggle('denali-dark-theme');
         }
         
         function toggleTabsLeft() {

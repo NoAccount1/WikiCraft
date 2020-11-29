@@ -30,7 +30,7 @@ p.no-margin {
     border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: #c4c4c4;
+    background: #cecece;
 }
 ::-webkit-scrollbar-track{
     background: #f0f0f0;
