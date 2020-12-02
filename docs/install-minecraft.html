@@ -79,7 +79,11 @@
     <div class="flex h-minus-nav">
 
         <div id="toggleTabsLeft" class="tabs is-primary is-vertical tablet-down-hide-left">
-            <ul>
+            
+            <ul id="menu">
+                <div class="input" style="padding: 3% 8%">
+                    <input class="" type="text" placeholder="Rechercher" id="searchBar" onkeyup="myFunction()">
+                </div>
                 <li class="tabs__section-header"><a href="#payant">Launchers payants</a></li>
 
                     <li class=""><a href="#officiel">Launcher Officiel</a></li>
@@ -92,6 +96,26 @@
                     <li class=""><a href="#shiginima">Shiginima Launcher</a></li>
                     <li class=""><a href="#bloodsymphony">BS Launcher</a></li>
             </ul>
+            <script>
+                function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("searchBar");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("menu");
+                li = ul.getElementsByTagName("li")
+
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    } else {
+                    li[i].style.display = "none";
+                    }
+                }
+                }
+            </script>
         </div>
 
         <div id="container" style="overflow-x:hidden; -webkit-overflow-scrolling: touch;" class="overflow-y-auto flex-auto">
