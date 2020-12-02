@@ -5,10 +5,10 @@
 # WikiCraft README :
 
 ### Welcome to this beautiful WebSite, here you can find informations about :
-- [ ] How to install Minecraft
-  - [ ] legaly with the official launcher
-  - [ ] legaly with MultiMC
-  - [ ] illegaly with TLauncher
+- [x] How to install Minecraft
+  - [x] legaly with the official launcher
+  - [x] legaly with MultiMC
+  - [x] illegaly with TLauncher
 - [ ] The Minecrafts servers :
   - [ ] the 1.12.2 Vanilla server
   - [ ] the 1.16.4 Vanilla server
