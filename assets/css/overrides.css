@@ -36,3 +36,7 @@ p.no-margin {
     background: #f0f0f0;
     border-radius: 0px;
 }
+
+.tabs.is-primary.is-vertical ul li {
+    cursor: auto;
+}
